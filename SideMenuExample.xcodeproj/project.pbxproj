@@ -13,6 +13,8 @@
 		6F2C726229B8955400D19C6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2C726029B8955400D19C6B /* Main.storyboard */; };
 		6F2C726429B8955700D19C6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2C726329B8955700D19C6B /* Assets.xcassets */; };
 		6F2C726729B8955700D19C6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F2C726529B8955700D19C6B /* LaunchScreen.storyboard */; };
+		6F2C727029B8959D00D19C6B /* SideMenu in Frameworks */ = {isa = PBXBuildFile; productRef = 6F2C726F29B8959D00D19C6B /* SideMenu */; };
+		6F2C727229B89C5700D19C6B /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C727129B89C5700D19C6B /* PresentedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		6F2C726329B8955700D19C6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F2C726629B8955700D19C6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F2C726829B8955700D19C6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F2C727129B89C5700D19C6B /* PresentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F2C727029B8959D00D19C6B /* SideMenu in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				6F2C726329B8955700D19C6B /* Assets.xcassets */,
 				6F2C726529B8955700D19C6B /* LaunchScreen.storyboard */,
 				6F2C726829B8955700D19C6B /* Info.plist */,
+				6F2C727129B89C5700D19C6B /* PresentedViewController.swift */,
 			);
 			path = SideMenuExample;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = SideMenuExample;
+			packageProductDependencies = (
+				6F2C726F29B8959D00D19C6B /* SideMenu */,
+			);
 			productName = SideMenuExample;
 			productReference = 6F2C725729B8955400D19C6B /* SideMenuExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 6F2C724E29B8955400D19C6B;
+			packageReferences = (
+				6F2C726E29B8959D00D19C6B /* XCRemoteSwiftPackageReference "SideMenu" */,
+			);
 			productRefGroup = 6F2C725829B8955400D19C6B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F2C725F29B8955400D19C6B /* ViewController.swift in Sources */,
+				6F2C727229B89C5700D19C6B /* PresentedViewController.swift in Sources */,
 				6F2C725B29B8955400D19C6B /* AppDelegate.swift in Sources */,
 				6F2C725D29B8955400D19C6B /* SceneDelegate.swift in Sources */,
 			);
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F2C726E29B8959D00D19C6B /* XCRemoteSwiftPackageReference "SideMenu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jonkykong/SideMenu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F2C726F29B8959D00D19C6B /* SideMenu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F2C726E29B8959D00D19C6B /* XCRemoteSwiftPackageReference "SideMenu" */;
+			productName = SideMenu;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6F2C724F29B8955400D19C6B /* Project object */;
 }
